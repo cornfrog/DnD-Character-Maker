@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home-header{
+    font-family: 'Merienda', cursive;
+    font-size: 7rem;
+    margin-top: 15%;
+}
+#home-submsg{
+    font-family: 'Merienda', cursive;
+    font-weight: normal;
+    font-size: 2rem;
+}
+#create-charbtn{
+    font-family: 'Merienda', cursive;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    border: .25rem solid black;
+    border-radius: .5rem;
+    transition: box-shadow .25s ease-in-out;
+}
+#create-charbtn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 70px rgb(0, 183, 255);
+}

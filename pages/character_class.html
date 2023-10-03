@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Selection</title>
+        <script src="../js/race_info.js"></script>
+        <script src="../js/class_info.js"></script>
+        <link rel="stylesheet" href="../styles/class-styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body onload="print_current_character()">
+        <div id="next-and-back">
+            <button id="back" onclick="window.location='character_race.html'">Back</button>
+            <button id="next" class="next">Next</button>
+        </div>
+        <h1 id="character-info-label">Current Character:</h1>
+        <p id="character-race"></p>
+        <p id="character-gender"></p>
+        <h1 id="class-options-label">Choose a Class:</h1>
+        <div id="character-classes">
+            <button id="class-opt-1" class="class-opt"></button>
+            <button id="class-opt-2" class="class-opt"></button>
+            <button id="class-opt-3" class="class-opt"></button>
+        </div>
+        <div id="spells-section">
+            <h1 id="spells-options-label">Choose 3 Spells:</h1>
+            <div id="spell-group">
+                <div id="spell-one"  class="class-spell">
+                    <div id="spell-one-img" class="spell-img">
+                        IMG HERE...
+                    </div>
+                    <p id="spell-one-name" class="spell-name"></p>
+                </div>
+                <div id="spell-two"  class="class-spell">
+                    <div id="spell-two-img" class="spell-img">
+                        IMG HERE...
+                    </div>
+                    <p id="spell-two-name" class="spell-name"></p>
+                </div>
+                <div id="spell-three"  class="class-spell">
+                    <div id="spell-three-img" class="spell-img">
+                        IMG HERE...
+                    </div>
+                    <p id="spell-three-name" class="spell-name"></p>
+                </div>
+                <div id="spell-four"  class="class-spell">
+                    <div id="spell-four-img" class="spell-img">
+                        IMG HERE...
+                    </div>
+                    <p id="spell-four-name" class="spell-name"></p>
+                </div>
+                <div id="spell-five"  class="class-spell">
+                    <div id="spell-five-img" class="spell-img">
+                        IMG HERE...
+                    </div>
+                    <p id="spell-five-name" class="spell-name"></p>
+                </div>
+                <div id="spell-six"  class="class-spell">
+                    <div id="spell-six-img" class="spell-img">
+                        IMG HERE...
+                    </div>
+                    <p id="spell-six-name" class="spell-name"></p>
+                </div>
+            </div>
+        </div>
+        <script src="../js/class_and_spells.js"></script>
+    </body>
+</html>

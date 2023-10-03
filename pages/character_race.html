@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Character Race</title>
+        <link rel="stylesheet" href="../styles/races-styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap" rel="stylesheet">
+        <script src="../js/race_info.js"></script>
+    </head>
+    <body onload="print_default_race_info()">
+        <div id="next-and-back">
+            <button id="back" onclick="window.location='../index.html'">Back</button>
+            <button id="next">Next</button>
+        </div>
+        <header id="races-header">Select a Race and Gender</header>
+        <div id="gender-section">
+            <button id="Male" class="selected-gender">Male &#9794;</button>
+            <button id="Female">Female &#9792;</button>
+        </div>
+        <div id="races-and-info">
+            <div id="races">
+                <h3>Race:</h3>
+                <div id="race-selection">
+                    <div class="race" id="Human">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Human</p>
+                    </div>
+                    <div class="race" id="Elf">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Elf</p>
+                    </div>
+                    <div class="race" id="Dwarf">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Dwarf</p>
+                    </div>
+                    <div class="race" id="Orc">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Orc</p>
+                    </div>
+                    <div class="race" id="Troll">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Troll</p>
+                    </div>
+                    <div class="race" id="Dark-Elf">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Dark-Elf</p>
+                    </div>
+                    <div class="race" id="Dragonborne">
+                        <div class="race-img">IMG HERE...</div>
+                        <p class="race-tag">Dragonborne</p>
+                    </div>
+                </div>
+            </div>
+            <div id="info">
+                <h3>Info:</h3>
+                <div id="race-info">
+                    <p id="race-name">Race: Human</p>
+                    <p id="race-alignment">Alignment: Good</p>
+                    <p id="race-proficencies">Proficencies: Intelligence Charisma</p>
+                    <div id="character-stats">
+                        <p id="race-str">Strength: 1</p>
+                        <p id="race-dex">Dexterity: 2</p>
+                        <p id="race-con">Constitution: 3</p>
+                        <p id="race-int">Intelligence: 4</p>
+                        <p id="race-wis">Wisdom: 5</p>
+                        <p id="race-cha">Charisma: 6</p>
+                    </div>
+                    <p id="lore-title">About:</p>
+                    <p id="race-lore">Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.</p>
+                </div>
+            </div>
+        </div>
+        <script src="../js/race_and_gender.js"></script>
+    </body>
+</html>

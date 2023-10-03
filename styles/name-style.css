@@ -1,0 +1,94 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 95%;
+    width: 100%;
+    font-family: 'Merienda', cursive;
+}
+#next-and-back{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+.next{
+    font-family: 'Merienda', cursive;
+    font-size: 2.25rem;
+    padding: .5rem 1.25rem;
+    background-color: green;
+    border: .25rem solid darkgreen;
+    color: white;
+    transition: background-color .25s ease-in-out;
+    border-radius: .5rem;
+}
+.create-enabled{
+    background-color: rgb(0, 215, 0);
+    font-family: 'Merienda', cursive;
+    font-size: 2.25rem;
+    padding: .5rem 1.25rem;
+    border: .25rem solid darkgreen;
+    color: white;
+    transition: background-color .25s ease-in-out;
+    border-radius: .5rem;
+}
+.create-enabled:hover{
+    background-color: green;
+    cursor: pointer;
+}
+#back{
+    font-family: 'Merienda', cursive;
+    font-size: 2.25rem;
+    padding: .5rem 1.25rem;
+    background-color: rgb(187, 0, 0);
+    color: white;
+    border: .25rem solid darkred;
+    border-radius: .5rem;
+    transition: background-color .25s ease-in-out;
+}
+#back:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#character-info-header{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+#character-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#character-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    font-size: 1.75rem;
+}
+#character-spells{
+    text-align: center;
+}
+#spell-list-header{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+}
+.character-spell{
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+#character-name{
+    font-size: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    padding: .5rem 1.5rem;
+    text-align: center;
+}

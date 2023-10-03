@@ -1,0 +1,106 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 95%;
+    width: 100%;
+    font-family: 'Merienda', cursive;
+}
+#next-and-back{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+#next{
+    font-family: 'Merienda', cursive;
+    font-size: 2.25rem;
+    padding: .5rem 1.25rem;
+    background-color: rgb(0, 215, 0);
+    border: .25rem solid darkgreen;
+    color: white;
+    transition: background-color .25s ease-in-out;
+    border-radius: .5rem;
+}
+#next:hover{
+    background-color: green;
+    cursor: pointer;
+}
+#back{
+    font-family: 'Merienda', cursive;
+    font-size: 2.25rem;
+    padding: .5rem 1.25rem;
+    background-color: rgb(187, 0, 0);
+    color: white;
+    border: .25rem solid darkred;
+    border-radius: .5rem;
+    transition: background-color .25s ease-in-out;
+}
+#back:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#good-luck-message{
+    margin: 2.5rem 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#item_list_header{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#extra_items_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#extra_items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1%;
+    row-gap: 5%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    padding: .5rem 1rem;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    width: max-content;
+    width: auto;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    border: .25rem solid rgb(130, 110, 0);
+    background-color: rgb(0, 0, 183);
+    transition: box-shadow .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
+.item:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(0, 183, 255);
+    background-color: rgb(0, 0, 251);
+}
+.selected_item{
+    background-color: rgb(0, 0, 251);
+    box-shadow: 0 0 25px rgb(0, 115, 255);
+}
+.item_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 150px;
+    width: 150px;
+    color: white;
+}
+.item_name{
+    width: fit-content;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    user-select: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name Your Character</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/name-style.css">
+    </head>
+    <body onload="load_character_info()">
+        <div id="next-and-back">
+            <button id="back" onclick="window.location='character_class.html'">Back</button>
+            <button id="next" class="next">Create</button>
+        </div>
+        <div id="character-info-container">
+            <h1 id="character-info-header">Your Character:</h1>
+            <div id="character-info">
+                <div id="race-and-gender">
+                    <p id="character-race"></p>
+                    <p id="character-gender"></p>
+                </div>
+                <div id="character-spells">
+                    <h3 id="spell-list-header">Spells:</h3>
+                    <p id="character-spell-1" class="character-spell"></p>
+                    <p id="character-spell-2" class="character-spell"></p>
+                    <p id="character-spell-3" class="character-spell"></p>
+                </div>
+            </div>
+        </div>
+        <input type="text" name="character-name" id="character-name" placeholder="Enter Character Name Here...">
+        <script src="../js/character_creation.js"></script>
+    </body>
+</html>
